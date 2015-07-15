@@ -1,0 +1,28 @@
+{
+  "name": "@inappcloud/stack-yaml",
+  "version": "1.0.0",
+  "description": "YAML functions.",
+  "author": "Nicolas Merouze",
+  "license": "MPL-2.0",
+  "homepage": "https://www.inappcloud.com/stack",
+  "bugs": "https://github.com/inappcloud/stack-yaml/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inappcloud/stack-yaml"
+  },
+  "keywords": [
+    "inappcloud",
+    "stack-package"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha --recursive -R dot -u tdd"
+  },
+  "dependencies": {
+    "@inappcloud/stack": "git://github.com/inappcloud/stack.git#master",
+    "js-yaml": "^3.3.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
+}
