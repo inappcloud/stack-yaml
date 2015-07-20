@@ -23,6 +23,7 @@
     "js-yaml": "^3.3.1"
   },
   "devDependencies": {
+    "@inappcloud/stack-test": "git://github.com/inappcloud/stack-test.git#master",
     "mocha": "^2.2.5"
   }
 }

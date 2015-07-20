@@ -24,12 +24,12 @@ module.exports = {
     }
   },
 
-  call: function(args, done, error) {
+  call: function(args, done) {
     var yaml = require('js-yaml');
     var result = yaml.load(escapeYaml(args.yaml), {});
 
     if (typeof result !== 'object') {
-      error(new Error('YAML parsing problem.'));
+      done(new Error('YAML parsing problem.'));
     } else {
       done(result);
     }

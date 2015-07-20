@@ -1,4 +1,6 @@
-var pkg = require('@inappcloud/stack').pkg;
+var fn = require('@inappcloud/stack').fn;
 var parse = require('./src/parse');
 
-module.exports = pkg([parse]);
+module.exports = {
+  parse: fn(parse)
+};
